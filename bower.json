@@ -1,0 +1,30 @@
+{
+    "name": "fixed-table-header",
+    "description": "jQuery plugin for fixing table header when scrolling",
+    "version": "0.0.1",
+    "main": [
+        "fixedTableHeader.js"
+    ],
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "jQuery",
+        "table",
+        "header",
+        "fixed",
+        "scroll"
+    ],
+    "authors": [
+        "Kakhaber Bazerashvili <kaxabernet@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "npm-debug.log",
+        "node_modules"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karaxuna/fixed-table-header.git"
+    }
+}

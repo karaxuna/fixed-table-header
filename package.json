@@ -1,0 +1,14 @@
+{
+    "name": "fixed-table-header",
+    "description": "jQuery plugin for fixing table header when scrolling",
+    "version": "0.0.1",
+    "author": "Kakhaber Bazerashvili",
+    "devDependencies": {
+        "gulp": "3.8.11",
+        "gulp-rename": "1.2.2",
+        "gulp-uglify": "1.2.0"
+    },
+    "scripts": {
+        "build": "./node_modules/.bin/gulp build"
+    }
+}
