@@ -1,4 +1,8 @@
 node_modules/
-bower_components/
+bower_components/**/*.js
+bower_components/**/*.json
+bower_components/**/*.txt
+bower_components/**/*.map
+!bower_components/jquery/dist/jquery.min.js
 fixedTableHeader.min.js
 npm-debug.log
