@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            
+            .vertical-scroll {
+                overflow-y: scroll;
+                height: 100%;
+            }
+            
+            .horizontal-scroll {
+                overflow-x: scroll;
+            }
+            
+            .table-bordered {
+                border-collapse: collapse;
+            }
+            
+            .table-bordered tr > td,
+            .table-bordered tr > th  {
+                border: 1px solid black;
+            }
+            
+            .table-bordered tr > th {
+                background-color: black;
+                color: white;
+                min-width: 50px;
+                border-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="vertical-scroll">
+            <div class="horizontal-scroll">
+                <table id="myTable" class="table-bordered"></table>
+            </div>
+        </div>
+        
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./fixedTableHeader.js"></script>
+        <script>
+            // Populate with test data
+            var table = $('#myTable');
+            var theadElem = $('<thead></thead>').appendTo(table);
+            var tbodyElem = $('<tbody></tbody>').appendTo(table);
+            
+            var i, j, rowElem;
+            for (i = 0; i < 50; i++) {
+                rowElem = $('<tr></tr>').appendTo(i === 0 ? theadElem : tbodyElem);
+                for (j = 0; j < 50; j++) {
+                    if (i === 0) {
+                        $('<th></th>').html('title ' + j).appendTo(rowElem);
+                    } else {
+                        $('<td></td>').html(j).appendTo(rowElem);
+                    }
+                }
+            }
+            
+            // Apply plugin
+            table.fixedTableHeader();
+        </script>
+    </body>
+</html>
