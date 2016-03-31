@@ -1,7 +1,7 @@
 {
     "name": "fixed-table-header",
     "description": "jQuery plugin for fixing table header when scrolling",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Kakhaber Bazerashvili",
     "devDependencies": {
         "bower": "1.7.7",
