@@ -3,6 +3,12 @@ jQuery plugin for fixing table header when scrolling ([Demo](http://karaxuna.git
 
 ### Installation
 
+Install with bower:
+
+```bash
+bower install fixed-table-header --save
+```
+
 Include plugin after including jQuery
 
 ```html
