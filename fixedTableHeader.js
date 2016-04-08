@@ -53,7 +53,7 @@
             var theadElemCloneContainer = $('<table></table>')
                 .appendTo(self.parent())
                 .addClass(self.attr('class'))
-                .width(scrollingParentX.width())
+                .width(scrollingParentX.length ? scrollingParentX.width() : self.width())
                 .height(theadElem.height())
                 .css({
                     overflow: 'hidden',
